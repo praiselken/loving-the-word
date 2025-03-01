@@ -1,6 +1,6 @@
 import React from "react";
 import VideoBackground from "../src/components/videobackground.jsx";
-// import Navigation from "../src/components/navigation.jsx";
+import Sidebar from "./components/sidebar.jsx";
 import "./index.css";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       </div>
       {/* Overlay  */}
       <div className="fixed inset-0 bg-black opacity-40 pointer-events-none"></div>
-      {/* <Navigation className="z-50" /> */}
+      <Sidebar className="z-50" />
     </>
   );
 }
