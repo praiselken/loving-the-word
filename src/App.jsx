@@ -1,19 +1,40 @@
 import React from "react";
-import VideoBackground from "../src/components/videobackground.jsx";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import VideoBackground from "./components/VideoBackground.jsx";
 import Sidebar from "./components/sidebar.jsx";
+import Home from "./pages/home.jsx";
+import Store from "./pages/store.jsx";
+import About from "./pages/about.jsx";
+import Gallery from "./pages/gallery.jsx";
+import Contact from "./pages/contactUs.jsx";
 import "./index.css";
 
 function App() {
   return (
-    <>
-      {/* Video Background Container */}
-      <div className="relative w-full h-screen -z-10">
+    <Router>
+      {/* Video Background - Behind Everything */}
+      <div className="fixed w-full h-screen -z-10">
         <VideoBackground />
       </div>
-      {/* Overlay  */}
+
+      {/* Overlay for Darkening Effect */}
       <div className="fixed inset-0 bg-black opacity-40 pointer-events-none"></div>
-      <Sidebar className="z-50" />
-    </>
+
+      {/* Sidebar - Fixed to the Left */}
+      <Sidebar />
+
+      {/* Page Content - Positioned to the Right */}
+      <div className="ml-16 md:ml-60 p-6 text-white relative z-10">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/store" element={<Store />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
