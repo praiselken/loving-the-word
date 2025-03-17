@@ -1,16 +1,3 @@
-// import React from "react";
-
-// const Store = () => {
-//   return (
-//     <div className="flex flex-col items-center justify-center h-screen">
-//       <h1 className="text-4xl font-bold">Store</h1>
-//       <p className="text-lg mt-4">Browse our amazing products.</p>
-//     </div>
-//   );
-// };
-
-// export default Store;
-
 import React, { useState, useEffect } from "react";
 
 export default function Products() {
@@ -25,6 +12,9 @@ export default function Products() {
           ...product,
           image: `/products/${product.image}`, // Use images from `public/products/`
         }));
+
+        console.log("Updated Product Data:", updatedData); // ✅ Debug log to check image paths
+
         setProducts(updatedData);
       })
       .catch((error) => console.error("Error loading products:", error));
@@ -32,7 +22,7 @@ export default function Products() {
 
   return (
     <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white px-4">
-      <div className="bg-transparent bg-opacity-50 p-6 rounded-ml shadow-ml max-w-2xl text-center mb-8">
+      <div className="bg-transparent  p-6 rounded-ml shadow-ml max-w-2xl text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Store</h1>
         <p className="text-lg mb-6">VOL I</p>
       </div>
