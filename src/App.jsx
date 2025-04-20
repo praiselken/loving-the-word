@@ -7,7 +7,7 @@ import Home from "./pages/home.jsx";
 import Store from "./pages/store.jsx";
 import About from "./pages/about.jsx";
 import Gallery from "./pages/gallery.jsx";
-import Contact from "./pages/contactUs.jsx";
+// import Contact from "./pages/contact.jsx";
 import "./index.css";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </div>
     </Router>

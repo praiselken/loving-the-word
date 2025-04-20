@@ -2,13 +2,15 @@
     {
       "id": 1,
       "image": "ltwskullblack-1.jpg",
-      "link": "https://pay.sumup.com/b2c/Q9A17D2L",
-      "text": "LTW SkullCap - Black"
+      "link": "https://www.paypal.com/ncp/payment/LVSLYRGEUBH9W",
+      "text": "LTW SkullCap - Black",
+      "price": "24.99"
     },
     {
       "id": 2,
       "image": "ltwskullgrey-1.jpg",
-      "link": "https://pay.sumup.com/b2c/QHFNCQQF",
-      "text": "LTW SkullCap - Grey"
+      "link": "https://www.paypal.com/ncp/payment/XHJ6C2ZYU2MV8",
+      "text": "LTW SkullCap - Grey",
+      "price": "24.99"
     }
   ]
