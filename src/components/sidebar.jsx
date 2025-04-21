@@ -56,12 +56,12 @@ const Sidebar = () => {
             text="Gallery"
             isOpen={isOpen}
           />
-          <NavItem
+          {/* <NavItem
             to="/contactUs"
             icon={<ChatBubbleLeftRightIcon className="w-6 h-6" />}
             text="Contact"
             isOpen={isOpen}
-          />
+          /> */}
         </nav>
       </div>
     </>
