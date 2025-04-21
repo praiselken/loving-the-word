@@ -23,10 +23,10 @@ const Sidebar = () => {
         {/* Toggle Button */}
         <div className="mb-6">
           <button
-            className="w-8 h-8 flex items-center justify-center rounded-sm hover:bg-gray-800"
+            className="w-8 h-8 flex items-center justify-center rounded-sm hover:bg-transparent hover:text-[#ff1d1d] transition duration-300"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <ChevronDoubleLeftIcon className="w-5 h-5" />
+            <ChevronDoubleLeftIcon className="w-5 h-5 text-white" />
           </button>
         </div>
 

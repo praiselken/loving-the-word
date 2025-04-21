@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import VideoBackground from "./components/VideoBackground.jsx";
+import VideoBackground from "./components/videobackground.jsx";
 import Sidebar from "./components/sidebar.jsx";
 import Home from "./pages/home.jsx";
 import Store from "./pages/store.jsx";
