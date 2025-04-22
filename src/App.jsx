@@ -6,8 +6,7 @@ import Home from "./pages/home.jsx";
 import Store from "./pages/store.jsx";
 import About from "./pages/about.jsx";
 import Gallery from "./pages/gallery.jsx";
-import InstagramNotice from "./components/instagramNotice.jsx";
-// import Contact from "./pages/contact.jsx";
+import InstagramNotice from "./components/InstagramNotice.jsx";
 import "./index.css";
 
 function App() {
