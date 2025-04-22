@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import videoBg from "../assets/img/LTWbgVid.mp4";
+import videoBg from "../assets/img/LTWbgVid_fixed.mp4";
 
 const VideoBackground = () => {
   const videoRef = useRef();
