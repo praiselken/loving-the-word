@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <Link
         to="/store"
-        className="flex items-center gap-2 mt-4 fontltw border border-[#fffefe] !text-[#fffefe] bg-transparent px-8 py-3 text-3xl rounded-xl hover:bg-[#ff1d1d] transition hover:border-[#ff1d1d]"
+        className="flex items-center gap-2 mt-4 fontltw border border-[#fffefe] !text-[#fffefe] bg-transparent px-8 py-2 text-3xl rounded-xl hover:bg-[#ff1d1d] transition hover:border-[#ff1d1d]"
       >
         SHOP LTW
       </Link>
