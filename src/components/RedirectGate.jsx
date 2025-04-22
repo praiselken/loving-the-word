@@ -23,7 +23,7 @@ const safeRedirect = (url) => {
 
 export default function RedirectGate({ children }) {
   const [shouldRenderApp, setShouldRenderApp] = useState(false);
-  const redirectUrl = "https://lovingtheword-ltw,com"; // Replace with your actual destination
+  const redirectUrl = "https://lovingtheword-ltw.com"; // Replace with your actual destination
 
   useEffect(() => {
     if (isInstagramBrowser()) {
