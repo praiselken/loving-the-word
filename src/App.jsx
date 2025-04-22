@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import VideoBackground from "./components/videobackground.jsx";
 import Sidebar from "./components/sidebar.jsx";
@@ -10,6 +10,17 @@ import InstagramNotice from "./components/InstagramNotice.jsx";
 import "./index.css";
 
 function App() {
+  useEffect(() => {
+    const redirectURL = "https://lovingtheword-ltw.com";
+
+    if (
+      navigator.userAgent.includes("Instagram") &&
+      !window.location.href.startsWith(redirectURL)
+    ) {
+      window.location.href = redirectURL;
+    }
+  }, []);
+
   return (
     <Router>
       {/* Video Background - Behind Everything */}
@@ -25,7 +36,7 @@ function App() {
 
       {/* Page Content - Positioned to the Right */}
       <div className="ml-16 md:ml-60 p-6 text-white relative z-10">
-        {/* ✅ Add this */}
+        {/* ✅ Instagram Notice */}
         <InstagramNotice />
 
         <Routes>
