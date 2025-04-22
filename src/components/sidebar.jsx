@@ -74,8 +74,10 @@ const NavItem = ({ to, icon, text, isOpen }) => {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `flex items-center gap-3 p-2 rounded-lg hover:bg-[#ff1d1d]/30 cursor-pointer ${
-          isActive ? "bg-[#ff1d1d]/50" : ""
+        `flex items-center gap-3 p-2 rounded-lg cursor-pointer ${
+          isActive
+            ? "bg-[#ff1d1d]/50 !text-white"
+            : "hover:bg-[#ff1d1d]/30 !text-white"
         }`
       }
     >

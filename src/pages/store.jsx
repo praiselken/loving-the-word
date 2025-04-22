@@ -19,7 +19,7 @@ export default function Products() {
 
   return (
     <div className="relative z-10 flex fontwfo flex-col items-center justify-center min-h-screen text-white px-4">
-      <div className=" p-6 rounded-lg shadow-lg max-w-2xl text-center mb-8">
+      <div className=" p-6 rounded-lg max-w-2xl text-center mb-8">
         <h1 className="text-4xl font-bold mb-4 fontltw">Store</h1>
         <p className="text-lg mb-6">VOL 1</p>
       </div>
